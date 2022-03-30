@@ -1,0 +1,2743 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>10000</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Edgar 18M12_spaceless.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="114" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_999e8bddddd6456993d4c539536e7386_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="990" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Length([businesssss]) &gt; 80</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-14 09:15:30</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-14 09:15:30</StartDate>
+              <EndDate>2019-02-14 09:15:30</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Length([businesssss]) &gt; 80</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1074" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_b77327e7c8214717bd13e8fbece3b679_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1074" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([businesssss], &quot;'&gt;Business Address &lt;span class='mailerAddress'&gt;&quot;, &quot;&lt;FILLIMI&gt;&quot;)&#xA;&#xA;" field="businesssss" size="10000" type="V_String" />
+            <FormulaField expression="Replace([businesssss], &quot;&lt;/span&gt; &lt;span class='mailerAddress'&gt;&quot;, &quot;&lt;tag&gt;&quot;)&#xA;" field="businesssss" size="10000" type="V_String" />
+            <FormulaField expression="Replace([businesssss], '&lt;/span&gt; &lt;/div&gt;', &quot;&lt;FUNDI&gt;&quot;)" field="businesssss" size="10000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>businesssss = Replace([businesssss], "'&gt;Business Address &lt;span class='mailerAddr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1146" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_f4700081b5b64c599d63e5f361e6d59f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1158" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([businesssss], ".*&lt;tag&gt;\s*[\d\-\s\(\)\+\/\.\X\E\T]+&lt;FUNDI&gt;")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-14 09:15:37</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-14 09:15:37</StartDate>
+              <EndDate>2019-02-14 09:15:37</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([businesssss], ".*&lt;tag&gt;\s*[\d\-\s\(\)\+\/\.\X\E\T]+&lt;FUNDI&gt;")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1242" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_bcc354b83cc04b4a951e6eec39e71eeb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1254" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_3918745e69454f7884efafe14d439d81_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" field="Business_Phone" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;&lt;FUNDI&gt;&quot;)" field="businesssss" size="10000" type="V_String" />
+            <FormulaField expression="Replace([businesssss], &quot;&lt;FILLIMI&gt; &lt;FUNDI&gt;&quot;, &quot;&quot;)" field="businesssss" size="10000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Business_Phone = REGEX_Replace([businesssss], ".*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1314" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_6695155c64f94720aa06570258438988_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1374" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="Formula: Replace([businesssss], '&lt;/span&gt; &lt;/div&gt;', &quot;&lt;FUNDI&gt;&quot;)" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="Formula: Replace([businesssss], &quot;&lt;FILLIMI&gt; &lt;FUNDI&gt;&quot;, &quot;&quot;)" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+                <Field name="Business_Phone" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" type="V_WString" column="16" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_0ac26b55ffa84fbeba98edd3896f9141_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1470" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([businesssss], "&lt;FILLIMI&gt;[^\d]+&lt;tag&gt;.*")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-13 17:00:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-13 17:00:04</StartDate>
+              <EndDate>2019-02-13 17:00:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([businesssss], "&lt;FILLIMI&gt;[^\d]+&lt;tag&gt;.*")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1554" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_59b540a29a094a8890cb1ccc8a429b73_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1566" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_f3f0f18bb0a742c3969bad9d637e1c4b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1062" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_ad9e20ae61a2472d81c6adb292dfc7e6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1566" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" field="business_address1" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$1&quot;)" field="business_CTZ" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;(([^&lt;]+)&lt;tag&gt;)?([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$3&quot;)" field="business_address2" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>business_address1 = REGEX_Replace([businesssss], "&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*", "...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1674" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_ff8ccde3b17e47cc80090d90acdbacd1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1566" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" field="business_name" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$1&quot;)" field="business_CTZ" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;(([^&lt;]+)&lt;tag&gt;)?([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$3&quot;)" field="business_address1" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>business_name = REGEX_Replace([businesssss], "&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*", "$1")...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1638" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_ce4582657cf94b978da4f8279c4756de_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1698" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="Formula: (Multiple Sources)" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+                <Field name="Business_Phone" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" type="V_WString" column="16" />
+                <Field name="business_address1" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" type="V_WString" column="17" />
+                <Field name="business_CTZ" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$1&quot;)" type="V_WString" column="18" />
+                <Field name="business_address2" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;(([^&lt;]+)&lt;tag&gt;)?([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$3&quot;)" type="V_WString" column="19" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="Formula: (Multiple Sources)" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+                <Field name="Business_Phone" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" type="V_WString" column="16" />
+                <Field name="business_address1" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;(([^&lt;]+)&lt;tag&gt;)?([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$3&quot;)" type="V_WString" column="17" />
+                <Field name="business_CTZ" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$1&quot;)" type="V_WString" column="18" />
+                <Field name="business_name" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" type="V_WString" column="20" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1878" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_ea103efbf564425386ce1a9c4c5ffa64_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1794" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Trim([business_CTZ],&quot; &quot;)" field="business_CTZ" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[business_CTZ = Trim([business_CTZ]," ")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="318" y="102" width="336" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Test</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="128" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([mailinggggg], ".* [A-Za-z]{2}\s{1,}[\d-]+\s*&lt;.*")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-13 16:58:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-02-13 16:58:12</StartDate>
+              <EndDate>2019-02-13 16:58:12</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([mailinggggg], ".* [A-Za-z]{2}\s{1,}[\d-]+\s*&lt;.*")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="522" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_fb59663e4f7c44f5b802f7a31c84f325_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_d5d32f5504ff40358d322e5747144d03_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_5ff01fc54a4944419a097f90a241d0f9_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="186" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Length([mailinggggg]) &gt; 70</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-14 09:19:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-14 09:19:00</StartDate>
+              <EndDate>2019-02-14 09:19:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Length([mailinggggg]) &gt; 70</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_07b8753ee61e4f199e8d193d6746128f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="294" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([mailinggggg],".&gt;Mailing Address &lt;span class=.mailerAddress.&gt;\s*[^\d]+\s*&lt;/span&gt;.*")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-15 16:33:14</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-15 16:33:14</StartDate>
+              <EndDate>2019-02-15 16:33:14</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([mailinggggg],".&gt;Mailing Address &lt;span class=.mailerAddress.&gt;\s*[^\d...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_67418814990940698e0d5365930f3033_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_1658f5e03a624a5bbafd91b24de78dae_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([mailinggggg], ".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-15 16:38:30</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-15 16:38:30</StartDate>
+              <EndDate>2019-02-15 16:38:30</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([mailinggggg], ".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_d3085f71fe554ee2957818faa8bf9064_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_15813916679e4b15bcd3a73651d15063_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([mailinggggg], ".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-02-15 16:38:26</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-02-15 16:38:26</StartDate>
+              <EndDate>2019-02-15 16:38:26</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([mailinggggg], ".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_d0a6985464c84fa3b21b7985fdcdbf53_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_e8e21ddc5a3f4ee5820dc178ba773d5e_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>mailinggggg</Field>
+          <RegExExpression value=".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;" />
+          <CaseInsensitve value="False" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>mailinggggg</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="mName" type="V_String" size="20000" />
+            <Field field="Address1" type="V_String" size="20000" />
+            <Field field="CSZ" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>mailinggggg_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+.&gt;Mailing Address\s*&lt;span c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>mailinggggg</Field>
+          <RegExExpression value=".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;" />
+          <CaseInsensitve value="False" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>mailinggggg</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Address1" type="V_String" size="20000" />
+            <Field field="Address2" type="V_String" size="20000" />
+            <Field field="CSZ" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>mailinggggg_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+.&gt;Mailing Address\s*&lt;span c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_c3db14d22c7a46e6ad0fc218e6e16773_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_30a52706eb15489e9321527b33bcd71b_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>mailinggggg</Field>
+          <RegExExpression value=".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;" />
+          <CaseInsensitve value="False" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>mailinggggg</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="mName" type="V_String" size="20000" />
+            <Field field="CSZ" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>mailinggggg_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+.&gt;Mailing Address\s*&lt;span c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_54aaf8823d4d4f1b9a49da791301b952_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>mailinggggg</Field>
+          <RegExExpression value=".&gt;Mailing Address\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;span class=.mailerAddress.&gt;\s*(.*?)\s*&lt;.span&gt;\s*&lt;.div&gt;" />
+          <CaseInsensitve value="False" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>mailinggggg</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Address1" type="V_String" size="20000" />
+            <Field field="CSZ" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>mailinggggg_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+.&gt;Mailing Address\s*&lt;span c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_58aa27efff2e4c288370f50d869f53fd_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="702" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field description="RegEx: Parsed from mailinggggg" name="CSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="14" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#3">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field description="RegEx: Parsed from mailinggggg" name="CSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="14" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="15" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="CSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="14" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#4">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field description="RegEx: Parsed from mailinggggg" name="CSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="14" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="786" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_cdf1feb99138406db02ef767b3b081e6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="798" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="10" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field description="RegEx: Parsed from mailinggggg" name="CSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="14" />
+                <Field description="RegEx: Parsed from mailinggggg" name="Address2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="15" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="54" width="600" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>MAILING ADDRESS</Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Yellow" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="882" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="co_name" selected="True" />
+            <SelectField field="CIK" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="State_location" selected="True" />
+            <SelectField field="State_incorp" selected="True" />
+            <SelectField field="Fiscal_year_end" selected="True" />
+            <SelectField field="Formerly" selected="True" />
+            <SelectField field="Assistant_directory_office" selected="True" />
+            <SelectField field="SIC" selected="True" />
+            <SelectField field="mailinggggg" selected="True" />
+            <SelectField field="mName" selected="True" />
+            <SelectField field="Address1" selected="True" rename="mAddress1" />
+            <SelectField field="Address2" selected="True" rename="mAddress2" />
+            <SelectField field="CSZ" selected="True" rename="mCSZ" />
+            <SelectField field="businesssss" selected="True" />
+            <SelectField field="bus_phone" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_123f7792d71f4b67b801f394947e4dd7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1938" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="co_name" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="1" />
+                <Field name="CIK" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="2" />
+                <Field name="State_location" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="3" />
+                <Field name="State_incorp" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="4" />
+                <Field name="Fiscal_year_end" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="5" />
+                <Field name="Formerly" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="6" />
+                <Field name="Assistant_directory_office" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="7" />
+                <Field name="SIC" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="8" />
+                <Field name="mailinggggg" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="9" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mName" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="10" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="11" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="12" />
+                <Field description="RegEx: Parsed from mailinggggg" name="mCSZ" size="20000" source="RegEx: Parsed from mailinggggg" type="V_String" column="13" />
+                <Field name="businesssss" size="10000" source="Formula: (Multiple Sources)" type="V_String" column="14" />
+                <Field name="bus_phone" size="10000" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" column="15" />
+                <Field name="business_name" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" type="V_WString" column="16" />
+                <Field name="Business_Phone" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" type="V_WString" column="17" />
+                <Field name="business_address1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" column="18" />
+                <Field name="business_address2" size="1073741823" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;(([^&lt;]+)&lt;tag&gt;)?([^&lt;]+)&lt;FUNDI&gt;&quot;, &quot;$3&quot;)" type="V_WString" column="19" />
+                <Field name="business_CTZ" size="1073741823" source="Formula: Trim([business_CTZ],&quot; &quot;)" type="V_WString" column="20" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1866" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="co_name" selected="True" />
+            <SelectField field="CIK" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="State_location" selected="True" />
+            <SelectField field="State_incorp" selected="True" />
+            <SelectField field="Fiscal_year_end" selected="True" />
+            <SelectField field="Formerly" selected="True" />
+            <SelectField field="Assistant_directory_office" selected="True" />
+            <SelectField field="SIC" selected="True" />
+            <SelectField field="mailinggggg" selected="True" />
+            <SelectField field="mName" selected="True" />
+            <SelectField field="mAddress1" selected="True" />
+            <SelectField field="mAddress2" selected="True" />
+            <SelectField field="mCSZ" selected="True" />
+            <SelectField field="businesssss" selected="True" />
+            <SelectField field="business_name" selected="True" />
+            <SelectField field="Business_Phone" selected="True" />
+            <SelectField field="business_address1" selected="True" />
+            <SelectField field="business_address2" selected="True" />
+            <SelectField field="business_CTZ" selected="True" />
+            <SelectField field="bus_phone" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1002" y="66" width="960" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>BUSINESS ADDRESS</Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Yellow" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="2142" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>mCSZ</Field>
+          <RegExExpression value="([^\n]+) ([\S]{2}) ([\d-]+|[A-Z]\d[A-Z][ -]?\d[A-Z]\d|[A-Z0-9]+-[\d-]+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>mCSZ</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_String" size="20000" />
+            <Field field="RegExOut2" type="V_String" size="20000" />
+            <Field field="RegExOut3" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>mCSZ_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+([^\n]+) ([\S]{2}) ([\d-]+|...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2334" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="co_name" selected="True" />
+            <SelectField field="CIK" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="State_location" selected="True" />
+            <SelectField field="State_incorp" selected="True" />
+            <SelectField field="Fiscal_year_end" selected="True" />
+            <SelectField field="Formerly" selected="True" />
+            <SelectField field="Assistant_directory_office" selected="True" />
+            <SelectField field="SIC" selected="True" />
+            <SelectField field="mailinggggg" selected="False" />
+            <SelectField field="mName" selected="True" />
+            <SelectField field="mAddress1" selected="True" />
+            <SelectField field="mAddress2" selected="True" />
+            <SelectField field="mCSZ" selected="False" />
+            <SelectField field="RegExOut1" selected="True" rename="mCity" />
+            <SelectField field="RegExOut2" selected="True" rename="mState" />
+            <SelectField field="RegExOut3" selected="True" rename="mZip" />
+            <SelectField field="testCTZ" selected="True" />
+            <SelectField field="businesssss" selected="True" />
+            <SelectField field="business_name" selected="True" />
+            <SelectField field="Business_Phone" selected="True" />
+            <SelectField field="business_address1" selected="True" />
+            <SelectField field="business_address2" selected="True" />
+            <SelectField field="business_CTZ" selected="True" />
+            <SelectField field="bus_phone" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="3042" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_e5282de6f68c479996bfc25236c711d6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="2430" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>business_CTZ</Field>
+          <RegExExpression value="([^\n]+) ([\S]{2}) ([\d-]+|[A-Z]\d[A-Z][ -]?\d[A-Z]\d|[A-Z0-9]+-[\d-]+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>business_CTZ</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_String" size="20000" />
+            <Field field="RegExOut2" type="V_String" size="20000" />
+            <Field field="RegExOut3" type="V_String" size="20000" />
+          </ParseComplex>
+          <Match>
+            <Field>business_CTZ_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+([^\n]+) ([\S]{2}) ([\d-]+|...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2526" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ((!IsNull([business_CTZ]) or !IsEmpty([business_CTZ])) and (IsNull([RegExOut1]) or IsEmpty([RegExOut1])) and REGEX_Match([business_CTZ], &quot;^[^\d]+$&quot;)) THEN [business_CTZ] ELSE [RegExOut1] ENDIF" field="RegExOut1" size="20000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RegExOut1 = IF ((!IsNull([business_CTZ]) or !IsEmpty([business_CTZ])) and (IsNul...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2622" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="co_name" selected="True" />
+            <SelectField field="CIK" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="State_location" selected="True" />
+            <SelectField field="State_incorp" selected="True" />
+            <SelectField field="Fiscal_year_end" selected="True" />
+            <SelectField field="Formerly" selected="True" />
+            <SelectField field="Assistant_directory_office" selected="True" />
+            <SelectField field="SIC" selected="True" />
+            <SelectField field="mName" selected="True" />
+            <SelectField field="mAddress1" selected="True" />
+            <SelectField field="mAddress2" selected="True" />
+            <SelectField field="mCity" selected="True" />
+            <SelectField field="mState" selected="True" />
+            <SelectField field="mZip" selected="True" />
+            <SelectField field="businesssss" selected="False" />
+            <SelectField field="business_name" selected="True" />
+            <SelectField field="business_address1" selected="True" />
+            <SelectField field="business_address2" selected="True" />
+            <SelectField field="business_CTZ" selected="False" />
+            <SelectField field="RegExOut1" selected="True" rename="business_city" />
+            <SelectField field="RegExOut2" selected="True" rename="business_state" />
+            <SelectField field="RegExOut3" selected="True" rename="business_zip" />
+            <SelectField field="Business_Phone" selected="True" />
+            <SelectField field="bus_phone" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="3054" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless_mod.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Edgar 18M12_spaceless_mod.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2718" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([mCity], &quot;^\d+.*&quot;, &quot;&quot;)" field="mCity" size="20000" type="V_String" />
+            <FormulaField expression="REGEX_Replace([business_city], &quot;^(\d|[^A-Za-z]).*$&quot;, &quot;&quot;)" field="business_city" size="20000" type="V_String" />
+            <FormulaField expression="REGEX_Replace([business_address1], &quot;^&lt;.*&quot;, &quot;&quot;)" field="business_address1" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([business_address2], &quot;^&lt;.*&quot;, &quot;&quot;)" field="business_address2" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>mCity = REGEX_Replace([mCity], "^\d+.*", "")
+business_city = REGEX_Replace([busi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2814" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="mCity" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>mCity - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2910" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_081e420122434ecb8ca0c323ae5cefa4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2814" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="business_city" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>business_city - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2910" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_99bc78d4017241ffa5b9e66c3cb8557e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2034" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_d620e97e7ba140a5b1aa79bde1c1a321_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2238" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ((!IsNull([mCSZ]) or !IsEmpty([mCSZ])) and (IsNull([RegExOut1]) or IsEmpty([RegExOut1])) and REGEX_Match([mCSZ], &quot;^[^\d]+$&quot;)) THEN [mCSZ] ELSE [RegExOut1] ENDIF" field="RegExOut1" size="20000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RegExOut1 = IF ((!IsNull([mCSZ]) or !IsEmpty([mCSZ])) and (IsNull([RegExOut1]) o...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="2958" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="co_name" />
+            <Field field="CIK" />
+            <Field field="State_location" />
+            <Field field="State_incorp" />
+            <Field field="Fiscal_year_end" />
+            <Field field="Formerly" />
+            <Field field="Assistant_directory_office" />
+            <Field field="SIC" />
+            <Field field="mName" />
+            <Field field="mAddress1" />
+            <Field field="mAddress2" />
+            <Field field="mCity" />
+            <Field field="mState" />
+            <Field field="mZip" />
+            <Field field="business_name" />
+            <Field field="business_address1" />
+            <Field field="business_address2" />
+            <Field field="business_city" />
+            <Field field="business_state" />
+            <Field field="business_zip" />
+            <Field field="Business_Phone" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: co_name, CIK, State_location, State_incorp, Fiscal_year_end, Formerly, Assistant_directory_office, SIC, mName, mAddress1, mAddress2, mCity, mState, mZip, business_name, business_address1, business_address2, business_city, business_state, business_zip, Business_Phone</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1578" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([businesssss], &quot;.*&lt;tag&gt; (.*?)\s*&lt;.*&quot;, &quot;$1&quot;)" field="aaa" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[aaa = REGEX_Replace([businesssss], ".*<tag> (.*?)\s*<.*", "$1")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1674" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Hp\AppData\Local\Temp\Engine_4428_cfde91e1fa4745d8ad7532b5c9d8cfa5_\Engine_3964_0ab396f53df14291a7a243c42fbca268_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="6" y="210" width="204" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Spaceless - fajllit qe u nxjerr prej WR, i jane hek hapesirat me alteriks me veglen 'Data Cleansing'</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2898" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="bus_phone" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="2802" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="co_name" selected="True" />
+            <Field field="CIK" selected="True" />
+            <Field field="State_location" selected="True" />
+            <Field field="State_incorp" selected="True" />
+            <Field field="Fiscal_year_end" selected="True" />
+            <Field field="Formerly" selected="True" />
+            <Field field="Assistant_directory_office" selected="True" />
+            <Field field="SIC" selected="True" />
+            <Field field="mName" selected="True" />
+            <Field field="mAddress1" selected="True" />
+            <Field field="mAddress2" selected="True" />
+            <Field field="mCity" selected="True" />
+            <Field field="mState" selected="True" />
+            <Field field="mZip" selected="True" />
+            <Field field="business_name" selected="True" />
+            <Field field="business_address1" selected="True" />
+            <Field field="business_address2" selected="True" />
+            <Field field="business_city" selected="True" />
+            <Field field="business_state" selected="True" />
+            <Field field="business_zip" selected="True" />
+            <Field field="Business_Phone" selected="True" />
+            <Field field="bus_phone" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="co_name" size="161" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="CIK" size="10" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="String" />
+            <Field name="State_location" size="2" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="String" />
+            <Field name="State_incorp" size="2" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="String" />
+            <Field name="Fiscal_year_end" size="4" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="String" />
+            <Field name="Formerly" size="180" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+            <Field name="Assistant_directory_office" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="Bool" />
+            <Field name="SIC" size="4" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="String" />
+            <Field description="RegEx: Parsed from mailinggggg" name="mName" size="40" source="RegEx: Parsed from mailinggggg" type="V_String" />
+            <Field description="RegEx: Parsed from mailinggggg" name="mAddress1" size="40" source="RegEx: Parsed from mailinggggg" type="V_String" />
+            <Field description="RegEx: Parsed from mailinggggg" name="mAddress2" size="40" source="RegEx: Parsed from mailinggggg" type="V_String" />
+            <Field description="RegEx: Parsed from mCSZ" name="mCity" size="40" source="Formula: REGEX_Replace([mCity], &quot;^\d+.*&quot;, &quot;&quot;)" type="V_String" />
+            <Field description="RegEx: Parsed from mCSZ" name="mState" size="2" source="RegEx: Parsed from mCSZ" type="String" />
+            <Field description="RegEx: Parsed from mCSZ" name="mZip" size="10" source="RegEx: Parsed from mCSZ" type="String" />
+            <Field name="business_name" size="40" source="Formula: REGEX_Replace([businesssss], &quot;&lt;FILLIMI&gt;\s*([^&lt;]+)&lt;tag&gt;.*&quot;, &quot;$1&quot;)" type="V_String" />
+            <Field name="business_address1" size="40" source="Formula: REGEX_Replace([business_address1], &quot;^&lt;.*&quot;, &quot;&quot;)" type="V_String" />
+            <Field name="business_address2" size="40" source="Formula: REGEX_Replace([business_address2], &quot;^&lt;.*&quot;, &quot;&quot;)" type="V_String" />
+            <Field description="RegEx: Parsed from business_CTZ" name="business_city" size="40" source="Formula: REGEX_Replace([business_city], &quot;^(\d|[^A-Za-z]).*$&quot;, &quot;&quot;)" type="V_String" />
+            <Field description="RegEx: Parsed from business_CTZ" name="business_state" size="2" source="RegEx: Parsed from business_CTZ" type="String" />
+            <Field description="RegEx: Parsed from business_CTZ" name="business_zip" size="10" source="RegEx: Parsed from business_CTZ" type="String" />
+            <Field name="Business_Phone" size="20" source="Formula: REGEX_Replace([businesssss], &quot;.*&lt;tag&gt;(\s*[\d\-\s\(\)\+\/\.\X\E\T]+)&lt;FUNDI&gt;&quot;,&quot;$1&quot;)" type="V_String" />
+            <Field name="bus_phone" size="20" source="File: C:\Users\Hp\Desktop\AAA QCing\edgar\Edgar 18M12_spaceless.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="False" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="False" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="False" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="False" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="False" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="False" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="40" Connection="False" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="False" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="False" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="False" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="False" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="True" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="False" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="True" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="False" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Unique" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Unique" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Edgar_extra_parsing - feb2019</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
